@@ -1,2 +1,71 @@
 @use './variables.scss' as *;
 @use './reset.scss' as *;
+
+.notif {
+    display: flex;
+    padding: 1.6rem;
+    border-radius: 1rem;
+    gap: 1.4rem;
+    align-items: flex-start;
+
+    &[data-read="true"] {
+        background-color: $white;
+    }
+    &[data-read="false"] {
+        background-color: $very-light-grayish-blue;
+
+        & .notif__text::after {
+            content: "";
+            display: inline-block;
+            background-color: $red;
+            border-radius: 50%;
+            width: .9rem;
+            height: .9rem;
+            margin-left: .8rem;
+        }
+    }
+
+    &__image-container {
+        flex-shrink: 0;
+        width: 4rem;
+        height: 4rem;
+    }
+    &__text-container {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.5;
+    }
+    &__username {
+        font-weight: bold;
+        font-size: 1.42rem;
+        text-decoration: none;
+        color: $very-dark-blue;
+    }
+    &__useraction {
+        font-size: 1.42rem;
+        color: $dark-grayish-blue;
+    }
+    &__target {
+        font-size: 1.42rem;
+        font-weight: bold;
+        color: $dark-grayish-blue;
+        text-decoration: none;
+
+        &.--group {
+            color: $blue;
+        }
+    }
+    &__date {
+        font-size: 1.42rem;
+        color: $grayish-blue;
+    }
+    &__p-message {
+        border: .1rem solid $grayish-blue;
+        border-radius: .5rem;
+        padding-block: 2rem;
+        padding-inline: 1.6rem;
+        margin-top: 1.6rem;
+        font-size: 1.42rem;
+        color: $dark-grayish-blue;
+    }
+}
