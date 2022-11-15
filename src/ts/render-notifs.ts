@@ -9,6 +9,7 @@ export default function renderNotifs(notifications: CustomNotification[]): void 
         const article = document.createElement('article'); 
         article.setAttribute('class', 'notif');
         article.dataset.read = String(notification.notifRead);
+        article.tabIndex = 0;
 
         const imageContainer = document.createElement('figure');
         imageContainer.setAttribute('class', 'notif__image-container');
@@ -85,6 +86,9 @@ export default function renderNotifs(notifications: CustomNotification[]): void 
             imageContainer2.appendChild(img2);
         }
 
+        article.addEventListener('click', ()=> {
+            article.dataset.read = "true";
+        })
         notifsContainer.appendChild(article);
     })
 
