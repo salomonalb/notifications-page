@@ -9,6 +9,7 @@
     align-items: flex-start;
     margin-top: 1rem;
     transition: all 500ms;
+    cursor: pointer;
 
     &[data-read="true"] {
         background-color: $white;
