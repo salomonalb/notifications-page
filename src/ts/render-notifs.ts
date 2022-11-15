@@ -43,6 +43,7 @@ export default function renderNotifs(notifications: CustomNotification[]): void 
 
             const notifTarget = document.createElement('a');
             notifTarget.setAttribute('class', 'notif__target');
+            notifTarget.href = "#";
             notifTarget.textContent = notification.notifTarget;
             notifTarget.classList.add('--group');
             notifText.appendChild(notifTarget);
@@ -51,6 +52,7 @@ export default function renderNotifs(notifications: CustomNotification[]): void 
 
             const notifTarget = document.createElement('a');
             notifTarget.setAttribute('class', 'notif__target');
+            notifTarget.href = "#";
             notifTarget.textContent = notification.notifTarget;
             notifText.appendChild(notifTarget);
 
