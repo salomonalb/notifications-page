@@ -1,2 +1,51 @@
 @use './variables.scss' as *;
 @use './reset.scss' as *;
+
+
+.notifs-panel {
+    background-color: $white;
+    padding-block: min(8vw, 4rem);//3rem; //4rem
+    padding-inline: min(4.5vw, 3rem) ;//1.7rem; //3rem
+    width: min(100%, 73rem);
+    margin: auto;
+    margin-block: min(4.1vw, 60rem);
+    border-radius: 2rem;
+    box-shadow: 0 .1rem 6rem transparentize($color: $grayish-blue, $amount: 0.7);
+    
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        gap: min(2.6vw, 1.3rem);//1rem;
+        align-items: flex-end;
+        margin-bottom: min(8vw, 4rem);
+    }
+    &__title {
+        font-size: min(5.3vw, 2.4rem);//2.4rem ;//2rem;
+        max-width: max-content;
+        display: block;
+    }
+    &__counter {
+        display: block;
+        margin-right: auto;
+        background-color: $blue;
+        color: $white;
+        font-size: min(5.3vw, 2.4rem);
+        font-weight: bold;
+        padding-block: .6rem;
+        padding-inline: 1.2rem;
+        border-radius: .5rem;
+    }
+    &__button {
+        border: none;
+        background-color: transparent;
+        font-family: inherit;
+        color: $dark-grayish-blue;
+        font-size: min(4vw, 1.6rem);//1.5rem;
+        cursor: pointer;
+        width: max-content;
+        
+        &:hover {
+            color: $blue;
+        }
+    }
+}
