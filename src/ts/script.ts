@@ -1,3 +1,4 @@
 import notifications from "./notifications";
+import renderNotifs from "./render-notifs";
 
-console.log(notifications[0])
+renderNotifs(notifications);
