@@ -2,10 +2,10 @@
   "name": "notifications-page",
   "version": "1.0.0",
   "description": "",
-  "source": "src/index.html",
+  "source": "./src/index.html",
   "scripts": {
     "dev": "npx parcel",
-    "build": "parcel build"
+    "build": "npx parcel build"
   },
   "keywords": [],
   "author": "",
