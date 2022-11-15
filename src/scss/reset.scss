@@ -1,3 +1,5 @@
+@use './variables.scss' as *;
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -14,4 +16,9 @@ html {
 img {
     display: block;
     width: 100%;
+}
+
+body {
+    font-family: $font;
+    background-color: $light-grayish-blue-1;
 }
