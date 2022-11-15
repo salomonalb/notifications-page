@@ -1,12 +1,13 @@
 import * as imgs from './images';
 
-interface CustomNotification {
+export interface CustomNotification {
     userName: string,
     userAvatar: string,
     userAction: string,
-    notifContent: string,
+    notifTarget: string,
     notifDate: string,
-    notifRead: boolean
+    notifRead: boolean,
+    notifType: string
 }
 
 const notifications: CustomNotification[] = [
@@ -14,57 +15,64 @@ const notifications: CustomNotification[] = [
         userName: "Mark Webber",
         userAvatar: imgs.avatarMark,
         userAction: "reacted to your recent post",
-        notifContent: "My first tournament today!",
+        notifTarget: "My first tournament today!",
         notifDate: "1m ago",
-        notifRead: false
+        notifRead: false,
+        notifType: "reaction"
     },
     {
         userName: "Angela Gray",
         userAvatar: imgs.avatarAngela,
         userAction: "followed you",
-        notifContent: "",
+        notifTarget: "",
         notifDate: "5m ago",
         notifRead: false,
+        notifType: "follow"
     },
     {
         userName: "Jacob Thompson",
         userAvatar: imgs.avatarJacob,
         userAction: "has joined your group",
-        notifContent: "Chess Club",
+        notifTarget: "Chess Club",
         notifDate: "1 day ago",
         notifRead: false,
+        notifType: "joined"
     },
     {
         userName: "Rizky Hassanuddin",
         userAvatar: imgs.avatarRizky,
         userAction: "sent you a private message",
-        notifContent: "Hello, thnaks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game",
+        notifTarget: "Hello, thnaks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game",
         notifDate: "5 days ago",
         notifRead: true,
+        notifType: "message"
     },
     {
         userName: "Kimberly Smith",
         userAvatar: imgs.avatarKimberly,
         userAction: "commented on your picture",
-        notifContent: imgs.imgChess,
+        notifTarget: imgs.imgChess,
         notifDate: "1 week ago ago",
         notifRead: true,
+        notifType: "comment"
     },
     {
         userName: "Nathan Peterson",
         userAvatar: imgs.avatarNathan,
         userAction: "reacted to your recent post",
-        notifContent: "5 end-game strategies to increase your win rate",
+        notifTarget: "5 end-game strategies to increase your win rate",
         notifDate: "2 weeks ago",
         notifRead: true,
+        notifType: "reaction"
     },
     {
         userName: "Anna Kim",
         userAvatar: imgs.avatarAnna,
         userAction: "left the group",
-        notifContent: "Chess Club",
+        notifTarget: "Chess Club",
         notifDate: "2 weeks ago",
         notifRead: true,
+        notifType: "left"
     }
 ]
 
