@@ -1,10 +1,6 @@
 @use './variables.scss' as *;
 @use './reset.scss' as *;
 
-//Mobiles styles done
-//Make responsive
-//add States
-
 .notif {
     display: flex;
     padding: min(4.26vw, 2rem);//1.6rem;
@@ -31,8 +27,8 @@
 
     &__image-container {
         flex-shrink: 0;
-        width: min(10.6vw, 4.5rem);//4rem;
-        height: min(10.6vw, 4.5rem);//4rem;
+        width: min(10.6vw, 4.5rem); //4rem;
+        height: min(10.6vw, 4.5rem); //4rem;
     }
     &__image {
         cursor: pointer;
