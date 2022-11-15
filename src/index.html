@@ -10,6 +10,35 @@
     <title>Notifications Page</title>
 </head>
 <body>
-    
+    <article class="notifs-panel">
+        <header class="notifs-panel__header">
+            <h1 class="notifs-panel__title">
+                Notifications
+                <span class="notifs-panel__counter">3</span>
+            </h1>
+            <button type="button" class="notifs-panel__button">Mark all as read</button>
+        </header>
+        <section class="notifs-panel__container">
+            <article class="notif" data-read="false">
+                    <figure class="notif__image-container" >
+                        <img class="notif__avatar" src="assets/images/avatar-jacob-thompson.webp" alt="avatar">
+                    </figure>
+                    <p class="notif__text-container">
+                        <span class="notif__text">
+                            <span class="notif__username">Nathan Peterson</span>
+                            <span class="notif__useraction">has joined your group</span>
+                            <span class="notif__target">Chess Club</span>
+                        </span>
+                        <time class="notif__date">1 Day ago</time>
+                            <p class="notif__p-message">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis placeat pariatur nihil accusamus inventore aperiam!
+                            </p>
+                    </p>
+                        <figure class="notif__image-container">
+                            <img class="notif__image" src="assets/images/image-chess.webp" alt="chess">
+                        </figure>
+            </article>
+        </section>
+    </article>
 </body>
 </html>
