@@ -8,6 +8,7 @@
     gap: min(3.73vw, 2rem);
     align-items: flex-start;
     margin-top: 1rem;
+    transition: all 500ms;
 
     &[data-read="true"] {
         background-color: $white;
