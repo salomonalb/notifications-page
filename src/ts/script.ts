@@ -1,8 +1,8 @@
 import notifications from "./notifications";
 import renderNotifs from "./render-notifs";
 import counter from "./counter";
-import readAll from "./read-all";
+import addReadEvents from "./read-event";
 
 renderNotifs(notifications);
 counter()
-readAll()
+addReadEvents()
